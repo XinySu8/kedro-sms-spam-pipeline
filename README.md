@@ -2,6 +2,18 @@
 
 [![Powered by Kedro](https://img.shields.io/badge/powered_by-kedro-ffc900?logo=kedro)](https://kedro.org)
 
+A lightweight ML-systems practice project: build a reproducible data ingestion pipeline for the SMS Spam dataset using Kedro.
+
+## What this repo demonstrates
+- Configuration-driven datasets (Kedro Data Catalog) instead of hard-coded file paths
+- A reproducible ingestion pipeline (raw CSV -> cleaned Parquet) with a stable schema
+- Pipeline modularization (run a single node or the whole pipeline)
+
+## Project structure
+- Raw data (local only): `data/01_raw/spam.csv` (NOT committed)
+- Output artifact (local only): `data/02_intermediate/sms_spam_clean.parquet` (NOT committed)
+- Pipeline code: `src/kedro_sms_spam_pipeline/pipelines/sms_spam`
+
 ## Overview
 
 This is your new Kedro project, which was generated using `kedro 1.2.0`.
